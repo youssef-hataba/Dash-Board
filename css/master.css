@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    font-family: "Ubuntu", sans-serif;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+body {
+    background-color: #001;
+    display: flex;
+}
+
+.img-box {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+    flex-shrink: 0;
+}
+
+.img-box img {
+    width: 100%;
+
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile h2 {
+    font-size: 20px;
+    text-transform: capitalize;
+
+}
+
+.menu {
+    background-color: #123;
+    width: 70px;
+    height: 100vh;
+    padding: 15px;
+    overflow: hidden;
+    transition: .5s;
+    flex-shrink: 0;
+}
+
+.menu:hover {
+    width: 260px;
+}
+
+.menu i {
+    color: rgba(216, 204, 204, 0.749);
+}
+
+ul {
+    list-style: none;
+    position: relative;
+    height: 95%;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    transition: .3s;
+}
+
+a:hover,
+.active,
+.data-info .box:hover,
+td:hover {
+    background-color: #ffffff55;
+}
+
+.log-out {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.log-out a i,
+.log-out a p {
+    color: #a00;
+}
+
+i {
+    font-size: 30px;
+}
+
+a p {
+    color: rgb(41, 109, 247);
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.content {
+    width: 100%;
+    margin: 10px;
+}
+
+.title-info {
+    background-color: rgb(41, 109, 247);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.title-info p {
+    font-weight: bolder;
+    letter-spacing: .5px;
+}
+
+.data-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.data-info .box {
+    background-color: #123;
+    height: 150px;
+    flex-basis: 150px;
+    flex-grow: 1;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.data-info .box i {
+    font-size: 40px;
+}
+
+.data-info .box .data {
+    text-align: center;
+}
+
+.data-info .box .data span {
+    font-size: 30px;
+}
+
+.data-info .box .data p {
+    font-size: 30px;
+    color: rgb(41, 109, 247);
+}
+
+.box i {
+    color: rgba(216, 204, 204, 0.749);
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border-spacing: 6px;
+    border-radius: 8px;
+}
+
+td,
+th {
+    background-color: #123;
+    height: 40px;
+    border-radius: 8px;
+}
+
+th {
+    background-color: rgb(41, 109, 247);
+}
+
+.price {
+    padding: 6px;
+    border-radius: 6px;
+    background-color: green;
+}
+
+.count {
+    padding: 6px;
+    border-radius: 6px;
+    background-color: rgba(255, 217, 0, 0.712);
+    color: black;
+}
